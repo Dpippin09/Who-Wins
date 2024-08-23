@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battles</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Battles</h1>
+    </header>
+    
+    <main>
+        <section id="comments-section">
+            <h2>Comments</h2>
+            <div id="comments-list">
+                <!-- Comments will be dynamically added here -->
+            </div>
+        </section>
+        
+        <section id="comment-form-section">
+            <h2>Leave a Comment</h2>
+            <form id="comment-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Battles Page. All rights reserved.</p>
+    </footer>
+    
+    <script src="Battles.js"></script>
+</body>
+</html>
