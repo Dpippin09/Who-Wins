@@ -1,89 +1,69 @@
-/* General Styles */
-html, body {
+/* Basic styles for the page */
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #353535;
-    color: #000000;
-    overflow-y: auto;
+    background-color: #f4f4f4;
 }
 
 header {
-    background-color: #38040e;
-    color: #e3170a;
-    padding: 1rem 0;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-}
-
 nav ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 1rem;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #e3170a;
+    color: #fff;
     text-decoration: none;
 }
 
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
 main {
-    padding: 2rem;
+    padding: 20px;
 }
 
-article {
-    background-color: #b9baa3;
-    padding: 1rem;
-    margin-bottom: 2rem;
+#comments-section, #comment-form-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-article h2 {
-    margin-top: 0;
-}
-
-#comments {
-    background-color: #b9baa3;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-}
-
-.comment {
+#comments-list .comment {
     border-bottom: 1px solid #ddd;
-    padding: 0.5rem 0;
+    padding: 10px 0;
 }
 
-.comment:last-child {
+#comments-list .comment:last-child {
     border-bottom: none;
-}
-
-#comment-form {
-    background-color: #b9baa3;
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 #comment-form label {
     display: block;
-    margin: 0.5rem 0 0.2rem;
+    margin-bottom: 5px;
 }
 
-#comment-form input,
-#comment-form textarea {
-    width: 99%;
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+#comment-form input, #comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
@@ -92,7 +72,7 @@ article h2 {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -103,13 +83,12 @@ article h2 {
 
 footer {
     background-color: #333;
-    color: #e3170a;
+    color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 10px 0;
     position: fixed;
     width: 100%;
     bottom: 0;
-    height: 20px;
 }
 
 /* Media Queries for Mobile Responsiveness */
